@@ -3,10 +3,27 @@
 console.log("This has run")
 
 
-    void function Balanced(word){
+    function convertChar(char){
+
+    }
+
+    function Balanced(word){
+        wordArr = word.toLowerCase()
         wordArr = word.split("");
-        console.log(wordArr);
+        wordVals = []
+        console.log(wordArr[0].charCodeAt())
+        wordArr.forEach(element => {
+        
+            wordVals.push(element.charCodeAt())
+
+            
+        });
+        console.log(wordVals);
     
     }
+
+input = "ogopogo"
+
+Balanced(input)
 
 
