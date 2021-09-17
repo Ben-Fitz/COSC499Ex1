@@ -39,9 +39,9 @@ console.log("This has run")
     }
 
     function isPalindrome(word){
-        
+        //create a for loop to go through the word from the outside in
         for(let i = 0; i < (word.length/2); i++){
-            if(word.charAt(i) != word.charAt(word.length - (i + 1))){
+            if(word.charAt(i) != word.charAt(word.length - (i + 1))){ //if character at location i and location length - i are identical continue outherwise break the loop as this is not a palindrome
                 console.log("This is not a palindrome")
                 return;
             }
